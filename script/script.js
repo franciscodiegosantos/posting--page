@@ -1,5 +1,4 @@
 
-// Seletores
 const form = document.querySelector("#form-post");
 const titulo = document.querySelector("#titulo");
 const conteudo = document.querySelector("#conteudo");
@@ -11,14 +10,12 @@ const conteudoRenderizar = document.querySelector("#renderizador-conteudo");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  // Objeto obrigatório
   const data = {
     title: titulo.value,
     body: conteudo.value,
     userId: 1
   };
 
-  // Fetch POST
   fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "POST",
     body: JSON.stringify(data),
@@ -28,11 +25,11 @@ form.addEventListener("submit", (event) => {
   })
     .then(response => response.json())
     .then(data => {
-      // Renderização
+      
       tituloRenderizar.innerHTML = data.title;
       conteudoRenderizar.innerHTML = data.body;
 
-      // Limpar formulário (extra, mas elegante)
+      // Limpar formulário
       form.reset();
     })
     .catch(error => {
