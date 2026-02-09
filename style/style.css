@@ -1,0 +1,66 @@
+ @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #22c0c3;
+  background: linear-gradient(0deg, rgba(34, 192, 195, 1) 0%, rgba(118, 152, 224, 1) 49%, rgba(222, 45, 253, 1) 100%);
+  font-family: "Google Sans Code", monospace, system-ui;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 600px;
+  height: 91.5vh;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.form-section,
+.post-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+}
+
+section.form-section h1 {
+  font-size: 36px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: #49a09d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #256e6c;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
